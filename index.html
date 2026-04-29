@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TaskFlow Lite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>TaskFlow Lite</h1>
+
+  <!-- Form -->
+  <form id="task-form">
+    <input type="text" id="task-input" placeholder="Enter a task..." />
+    <button>Add</button>
+    <small id="error-msg"></small>
+  </form>
+
+  <!-- Filters -->
+  <div class="filters">
+    <button data-filter="all">All</button>
+    <button data-filter="active">Active</button>
+    <button data-filter="completed">Completed</button>
+  </div>
+
+  <!-- Stats -->
+  <p id="task-count"></p>
+
+  <!-- Task List -->
+  <ul id="task-list"></ul>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
